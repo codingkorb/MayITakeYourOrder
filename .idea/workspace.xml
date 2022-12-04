@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b8a03de-b335-4579-86ad-a4d5dabe36b1" name="Changes" comment="Refactor point could be done here in tests for the lists">
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/ShopService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/ShopServiceTest.java" afterDir="false" />
+    <list default="true" id="9b8a03de-b335-4579-86ad-a4d5dabe36b1" name="Changes" comment="Refactor method was done here in the ProductRepoTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/repo/ProductRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repo/ProductRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/ShopServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ShopServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <recent name="repo" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ShopServiceTest.get_whenGivenId_returnsFoundProduct">
     <configuration name="ProductRepoTest.list_whenCalledReturnedAllProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MayITakeYourOrder" />
       <extension name="coverage">
@@ -88,8 +87,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShopServiceTest.get_whenGivenId_returnsFoundProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MayITakeYourOrder" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.ShopServiceTest" />
+      <option name="METHOD_NAME" value="get_whenGivenId_returnsFoundProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.listProducts_whenCalled_returnAllProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MayITakeYourOrder" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.ShopServiceTest" />
+      <option name="METHOD_NAME" value="listProducts_whenCalled_returnAllProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopServiceTest.get_whenGivenId_returnsFoundProduct" />
+        <item itemvalue="JUnit.ShopServiceTest.listProducts_whenCalled_returnAllProducts" />
         <item itemvalue="JUnit.ProductRepoTest.list_whenCalledReturnedAllProducts" />
       </list>
     </recent_temporary>
@@ -102,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670147607873</updated>
-      <workItem from="1670147608949" duration="11879000" />
+      <workItem from="1670147608949" duration="14834000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1670147887269</created>
@@ -125,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670156484163</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactor method was done here in the ProductRepoTest">
+      <created>1670160583770</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670160583770</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +198,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Product and Product Repo created and some test were made" />
     <MESSAGE value="Refactor point could be done here in tests for the lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor point could be done here in tests for the lists" />
+    <MESSAGE value="Refactor method was done here in the ProductRepoTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor method was done here in the ProductRepoTest" />
   </component>
 </project>

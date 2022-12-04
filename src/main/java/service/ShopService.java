@@ -1,5 +1,6 @@
 package service;
 
+import model.Product;
 import repo.ProductRepo;
 
 import java.util.List;
@@ -14,7 +15,14 @@ public class ShopService {
     }
 
     public List<Product> listProducts(){
-        return null;
+        List<Product> allProducts = productRepo.list();   // These 2 lines give out the same as
+        return allProducts;                                  // return productRepo.list();
+
+    }
+    public Product getProduct(String id) {
+        Product foundProduct = productRepo.get(id);
+        return foundProduct;
+
 
     }
 }
