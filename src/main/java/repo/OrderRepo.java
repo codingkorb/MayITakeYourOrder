@@ -9,9 +9,9 @@ import java.util.Map;
 
 public class OrderRepo {
 
-    private Map<String, Order> orders = new HashMap();  //Creating a new List for orders
+    private static Map<String, Order> orders = new HashMap();  //Creating a new List for orders
 
-    public void addOrder(Order order) { // Uebergabe Parameter von order und nicht orders
+    public static void addOrder(Order order) { // Uebergabe Parameter von order und nicht orders
         orders.put(order.getId(), order);
     }
     public Order getOrder(String id){

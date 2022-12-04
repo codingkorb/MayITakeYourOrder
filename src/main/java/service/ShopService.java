@@ -1,6 +1,8 @@
 package service;
 
+import model.Order;
 import model.Product;
+import repo.OrderRepo;
 import repo.ProductRepo;
 
 import java.util.List;
@@ -9,9 +11,10 @@ public class ShopService {
 
       private ProductRepo productRepo;  // imports repo.ProductRepo and
                                 // you need to Generate a Constructor for ProductRepo here
-
-    public ShopService(ProductRepo productRepo) {
+      private OrderRepo orderRepo;
+    public ShopService(ProductRepo productRepo, OrderRepo orderRepo) {
         this.productRepo = productRepo;
+        this.orderRepo = orderRepo;
     }
 
     public List<Product> listProducts(){
@@ -25,4 +28,18 @@ public class ShopService {
 
 
     }
+
+    public void addOrder(Order order){
+        orderRepo.addOrder(order);
+    }
+    public Order getOrder(String id) {
+        Order foundOrder = orderRepo.getOrder(id);
+        return foundOrder;
+    }
+
+    public List<Order> listOrders() {
+       List<Order> foundOrders = orderRepo.listOrders();
+       return foundOrders;
+    }
+
 }

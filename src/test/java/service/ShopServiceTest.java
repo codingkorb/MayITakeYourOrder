@@ -2,6 +2,7 @@ package service;
 
 import model.Product;
 import org.junit.jupiter.api.Test;
+import repo.OrderRepo;
 import repo.ProductRepo;
 
 import java.util.List;
@@ -16,7 +17,8 @@ class ShopServiceTest {
 
         // Given
         ProductRepo productRepo =  generateProductRepo();
-        ShopService shopService = new ShopService(productRepo);
+        OrderRepo orderRepo = new OrderRepo();
+        ShopService shopService = new ShopService(productRepo, orderRepo);
 
         // When
         List<Product> actual = shopService.listProducts();
@@ -36,7 +38,8 @@ class ShopServiceTest {
 
           // Given
             ProductRepo productRepo =  generateProductRepo();  // Stolen from void listProducts_whenCalled_returnAllProducts() {
-            ShopService shopService = new ShopService(productRepo);
+            OrderRepo orderRepo = new OrderRepo();
+            ShopService shopService = new ShopService(productRepo, orderRepo);
 
             // When
             Product actual = shopService.getProduct("F003");
